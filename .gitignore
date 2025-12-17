@@ -28,7 +28,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# ===== App Data (local-first storage) =====
+# ===== App Data =====
 data/
 annotator.db
 
