@@ -1,0 +1,52 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+:root {
+	--font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Display", system-ui, sans-serif;
+	--color-bg: #000000;
+	--color-panel: #0a0a0a;
+	--color-border: #1e293b;
+	--color-muted: #64748b;
+	--shadow-panel: 0 18px 40px rgba(0, 0, 0, 0.3);
+	--color-primary: #64748b;
+}
+
+html,
+body {
+	height: 100%;
+	background: #000000;
+	color: #e2e8f0;
+	font-family: var(--font-sans);
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	border-color: var(--color-border);
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #334155;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #475569;
+}
+
+/* Better focus states */
+:focus-visible {
+	outline: 2px solid #475569;
+	outline-offset: 2px;
+}
